@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  background-color: rgb(36, 33, 43);
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.foto {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 5% auto;
+  justify-content: center;
+  .foto__img {
+    width:100%;
+  }
+}
+
+.foto__btns {
+  display: flex;
+  margin: 12px 0;
+  .btns {
+    padding: 0px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 30px;
+    background: #434446;
+    margin: 0 10px 0 0;
+    .btns__icon {
+      height: 20px;
+      background: #434446;
+      margin: 0 6px;
+    }
+    .btns__count {
+      background: #434446;
+      font-size: 14px;
+    }
+  }
+}
+
+.foto__comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  display: flex;
+  min-height: 90px;
+  width: 100%;
+  border: #ffffff;
+  border-bottom: 2px solid #7b7b7c;
+  .comment__info {
+    width: 100%;
+  }
+  .comment__name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .comment__date {
+    font-size: 14px;
+    color: #b1b1b1;
+  }
+}
+
+.comment__form {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  .input__div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    .label {
+      position: absolute;
+      padding: 0px 6px;
+      left: 0.4rem;  
+      color: #b1b1b1;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .input__label {
+      top: -30%;
+    }
+    .textarea__label {
+      top: -18%;
+    }
+  }
+}
+
+.comment__btns {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  justify-content: space-between;
+  .btns {
+    border: none;
+  }
+  .btns__del {
+    height: 15px;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .btns__del:hover {
+    opacity: 100;
+  }
+  .btns__del:focus {
+    opacity: 100;
+  }
+  .btns__like {
+    opacity: 80%;
+    cursor: pointer;
+  }
+  .btns__like:hover {
+    opacity: 100;
+  }
+  .btns__like:focus {
+    opacity: 100;
+  }
+}
+
+.btns__icon {
+  height: 24px;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input {
+  border: 1px solid #7b7b7c;
+  padding: 10px 14px;
+  border-radius: 10px;
+  min-height: 50px;
+  max-height: 100%;
+}

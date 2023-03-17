@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="foto">
+    <img class="foto__img" src="img/zagruzheno.png">
+    <div class="foto__btns">
+      <button class="btns" onclick="liked(this)">
+        <img class="btns__icon" src="img/icon/like_contur.svg" id='img_like'>
+        <p class="btns__count" id="count__likes"></p>
+      </button>
+      <button class="btns">
+        <img class="btns__icon" src="img/icon/comment.svg">
+        <p class="btns__count" id="count_comments"></p>
+      </button>
+    </div>
+    <div class="foto__comments" id="comments">
+    </div>
+    <form class="comment__form" id="form">
+      <div class="column">
+        <div class="input__div">
+          <label class="label input__label">Name:</label>
+          <input class="input" required type="name" id="comment_name" name="name">
+        </div>
+        <div class="input__div">
+          <label class="label textarea__label">Comment:</label>
+          <textarea class="input" required type="text" id="comment_text"></textarea>
+        </div>
+        <div class="input__div">
+          <label class="label input__label" for="name">Date:</label>
+          <input class="input" type="date" id="comment_date">
+        </div>
+      </div>
+      <div class="comment__btns">
+        <button class="btns btns__del">
+          <img class="btns__icon" src="img/icon/del.svg">
+        </button>
+        <button class="btns btns__submit" id="comment_submit" onclick="submitComment(); return false;">
+          <img class="btns__icon" src="img/icon/send.svg">
+        </button>
+      </div>
+    </form>
+  </div>
+  <script defer src="script.js"></script>
+</body>
+</html>
